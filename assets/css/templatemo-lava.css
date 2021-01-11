@@ -244,7 +244,7 @@ header
 }
 
 .background-header .main-nav .nav li:hover a {
-  color: #f4813f!important;
+  color: #000!important;
 }
 
 .background-header .nav li a.active {
@@ -283,7 +283,7 @@ header
   transition: all 0.3s ease 0s;
 }
 
-a .logo-l {
+.header-area .main-nav  .logo-l {
   line-height: 80px;
   color: #F8693A;
   font-size: 28px;
@@ -558,7 +558,7 @@ a .logo-l {
 }
 
 @media (max-width: 991px) {
-  .logo {
+  .logo .logo-l{
     text-align: center;
     float: none!important;
   }
@@ -572,7 +572,7 @@ a .logo-l {
   .header-area .container {
     padding: 0px;
   }
-  .header-area .logo {
+  .header-area .logo .logo-l{
     margin-left: 30px;
   }
   .header-area .menu-trigger {
@@ -932,6 +932,13 @@ testimonials
   border-radius: 50%;
   max-width: 120px;
   margin-bottom: -60px;
+  background-position: center;
+  transition: 1s;
+}
+
+.author img:hover {
+  background-size: 50%;
+  background-position: center;
 }
 
 .owl-carousel .owl-nav button.owl-next span {
